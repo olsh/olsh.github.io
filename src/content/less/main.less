@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container-logos {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+
+      a {
+        width: 49%;
+        padding: 5%;
+        box-sizing: border-box;
+        transition: all 0.5s linear;
+
+        &:hover {
+          width: 51%;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+}
+
+.name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1%;
+}
