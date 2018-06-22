@@ -11,7 +11,7 @@ The quote from the [official site](https://www.sonarqube.org/sonarqube-7-2/):
 > SonarQube 7.2 introduces a generic way to import issues found by 3rd-party analyzers.
 > No need to jump from one tool to another, just benefit from a consolidated view in SonarQube. Even better: SonarQube has built-in support for some of the standard analyzers out there.
 
-At the moment of writing, only [TypeScript plugin](https://docs.sonarqube.org/display/PLUG/SonarTS) has out of the box support of the feature. But fortunately, there is [generic issue data](https://docs.sonarqube.org/display/SONAR/Generic+Issue+Data) format, which _allows importing issues from any analyzer_. ReSharper in its turn has free command line tool [Inspect Code](https://www.jetbrains.com/help/resharper/InspectCode.html) which can analyze projects and produce a report in XML format, so all we have to do is convert ReSharper format to SonarQube format.
+At the moment of writing, only [TypeScript plugin](https://docs.sonarqube.org/display/PLUG/SonarTS) has out of the box support of the feature. But fortunately, there is [generic issue data](https://docs.sonarqube.org/display/SONAR/Generic+Issue+Data) format, which _allows importing issues from any analyzer_. ReSharper in its turn has free command line tool [Inspect Code](https://www.jetbrains.com/help/resharper/InspectCode.html) which can analyze projects and produce a report in XML format, so all we have to do is to convert ReSharper format to SonarQube format.
 
 Generate ReSharper report part is simple, just run the Inspect Code tool against your solution:
 ```bat
@@ -44,3 +44,5 @@ Please note that the external issues have some limitations:
 > * the activation of the rules that raise these issues cannot be managed within SonarQube. In fact, external rules are not visible in the Rules page or reflected in any Quality Profile.
 
 I've created [the example project](https://github.com/olsh/resharper-to-sonarqube-example) with a [Cake script](https://github.com/olsh/resharper-to-sonarqube-example/blob/master/build.cake) which do all these steps automatically.
+
+If you have any problems with the integration, please open an issue on [GitHub](https://github.com/olsh/resharper-to-sonarqube-example/issues).

@@ -23,10 +23,13 @@ footer_links:
     url: https://www.linkedin.com/in/olshme/
     icon: fab fa-linkedin
   - title: Feed
-    url: atom.xml
+    url: feed.xml
     icon: fas fa-rss-square
 
 copyright: "© 2018 Oleg Shevchenko"
 
 read_time: true
-words_per_minute: 150
+words_per_minute: 200
+
+disqus:
+  shortname: olsh-me
