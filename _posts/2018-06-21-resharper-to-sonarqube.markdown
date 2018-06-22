@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Import ReSharper issues to SonarQube"
+title:  "Importing ReSharper issues to SonarQube"
 date:   2018-06-22 02:43:00 +0300
 categories: resharper sonarqube
 ---
@@ -18,7 +18,7 @@ Generate ReSharper report part is simple, just run the Inspect Code tool against
 InspectCode YouSolution.sln --swea -s=INFO -o=ReSharperReport.xml
 ```
 
-For the next step, I wrote as the small .NET core [global tool](https://github.com/olsh/dotnet-reqube) which can convert ReSharper report to SonarQube format. First, you need to install `dotnet-reqube` with the following command.
+For the next step, I wrote a small .NET core [global tool](https://github.com/olsh/dotnet-reqube) which can convert ReSharper report to SonarQube format. First, you need to install `dotnet-reqube` with the following command.
 
 ```bat
 dotnet tool install --global dotnet-reqube
@@ -30,7 +30,7 @@ and do the conversion:
 dotnet-reqube -i ReSharperReport.xml -o SonarQubeReport.json -d YouSolutionDirectory
 ```
 
-Then, you need to run [Sonar Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) as usual but with the additional parameter `/d:sonar.externalIssuesReportPaths=SonarQubeReport.json`
+Then, you need to run [Sonar Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) as usual but with the additional parameter `/d:sonar.externalIssuesReportPaths=SonarQubeReport.json` where JSON file is the `-o` parameter that you pass to `dotnet-reqube`.
 
 That's it after the analysis is complete, you can see issues detected by ReSharper in SonarQube interface.
 
