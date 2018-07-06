@@ -28,8 +28,7 @@ footer_links:
 
 copyright: "© 2018 Oleg Shevchenko"
 
-read_time: true
-words_per_minute: 200
+read_time: false
 
 disqus:
   shortname: olsh-me

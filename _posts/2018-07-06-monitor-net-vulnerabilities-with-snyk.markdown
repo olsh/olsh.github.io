@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Monitor vulnerabilities in .NET Core projects with Snyk"
-date:   2018-06-22 02:43:00 +0300
+date:   2018-07-06 22:00:00 +0300
 categories: net core snyk
 ---
 
