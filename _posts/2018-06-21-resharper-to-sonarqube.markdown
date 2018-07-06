@@ -14,19 +14,19 @@ The quote from the [official site](https://www.sonarqube.org/sonarqube-7-2/):
 At the moment of writing, only [TypeScript plugin](https://docs.sonarqube.org/display/PLUG/SonarTS) has out of the box support of the feature. But fortunately, there is [generic issue data](https://docs.sonarqube.org/display/SONAR/Generic+Issue+Data) format, which _allows importing issues from any analyzer_. ReSharper in its turn has free command line tool [Inspect Code](https://www.jetbrains.com/help/resharper/InspectCode.html) which can analyze projects and produce a report in XML format, so all we have to do is to convert ReSharper format to SonarQube format.
 
 Generate ReSharper report part is simple, just run the Inspect Code tool against your solution:
-```bat
+```bash
 InspectCode YouSolution.sln --swea -s=INFO -o=ReSharperReport.xml
 ```
 
 For the next step, I wrote a small .NET core [global tool](https://github.com/olsh/dotnet-reqube) which can convert ReSharper report to SonarQube format. First, you need to install `dotnet-reqube` with the following command.
 
-```bat
+```bash
 dotnet tool install --global dotnet-reqube
 ```
 
 and do the conversion:
 
-```bat
+```bash
 dotnet-reqube -i ReSharperReport.xml -o SonarQubeReport.json -d YouSolutionDirectory
 ```
 
