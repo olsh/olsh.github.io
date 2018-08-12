@@ -9,6 +9,7 @@ markdown: kramdown
 remote_theme: "mmistakes/so-simple-theme"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 google_analytics: UA-49608104-1
 
