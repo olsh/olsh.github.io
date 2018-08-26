@@ -24,7 +24,7 @@ Here are some of my pet projects on which I work in spare time:
   ![Rider](https://img.shields.io/badge/-Rider-blue.svg)
 
 * [ReSharper Bootstrap Templates](https://github.com/olsh/resharper-bootstrap-templates). 
-  An extension for R# and Rider IDE that provides autocomplete and validation for App settings and Connection strings. 
+  An extension for R# that provides live templates(snippets) for Bootstrap. 
   ![C#](https://img.shields.io/badge/-C%23-blue.svg)
   ![HTML](https://img.shields.io/badge/-HTML-blue.svg)
   ![R#](https://img.shields.io/badge/-R%23-blue.svg)
