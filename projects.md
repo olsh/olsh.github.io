@@ -28,6 +28,11 @@ Here are some of my pet projects on which I work in spare time:
   ![C#](https://img.shields.io/badge/-C%23-blue.svg)
   ![HTML](https://img.shields.io/badge/-HTML-blue.svg)
   ![R#](https://img.shields.io/badge/-R%23-blue.svg)
+  
+* [ReSharper Structured Logging](https://github.com/olsh/resharper-structured-logging). 
+  An extension for ReSharper that highlights structured logging templates and contains some useful analyzers. 
+  ![C#](https://img.shields.io/badge/-C%23-blue.svg)
+  ![R#](https://img.shields.io/badge/-R%23-blue.svg)
      
 * [DataGrip POCO generator](https://github.com/olsh/datagrip-poco-generator). 
   An extension for IntelliJ based IDEs (DataGrip IDE, Rider, etc.) for generation POCO (C#) classes from a database. 
