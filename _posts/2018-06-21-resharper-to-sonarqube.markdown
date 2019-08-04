@@ -7,7 +7,7 @@ categories: resharper sonarqube
 
 *Update 2019-08-04*
 
-*If you are using self-hosted SonarQube server, you can consider using [the plugin](https://github.com/Soloplan/resharper-clt-plugin)*
+*If you are on self-hosted SonarQube server, you can consider using [the plugin](https://github.com/Soloplan/resharper-clt-plugin)*
 
 ---
 In the latest version of SonarQube new fantastic feature was introduced, so-called external analyzers.
