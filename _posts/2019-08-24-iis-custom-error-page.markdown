@@ -22,7 +22,7 @@ First, we need to create `aspx` pages for 404 and 500 errors; let's keep them si
 
 Remove `HandleErrorAttribute`. We don't want to use it because it doesn't support `aspx` files.
 
-Add `customErrors` to `web.config` file, this config is responsible for handling erros which occurred in .NET stack
+Add `customErrors` to `web.config` file, this config is responsible for handling errors which occurred in .NET stack
 
 {% gist 3b44d8a3b5f0c89b42136ada80d1817f web-1.config %}
 
