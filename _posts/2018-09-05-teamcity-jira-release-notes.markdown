@@ -6,8 +6,10 @@ categories: jira teamcity octopus tfs
 ---
 
 *Update 2019-08-24*  
-*The official TeamCity plugin now supports metadata generation, 
+*Try the official plugin if you are using Jira + TeamCity + Octopus stack. The official Octopus plugin for TeamCity now supports metadata generation, 
 give it a try [https://octopus.com/blog/metadata-and-work-items](https://octopus.com/blog/metadata-and-work-items)*
+
+---
 
 Recently we switched from TFS to Jira and TeamCity. 
 We used to generate release notes with 
