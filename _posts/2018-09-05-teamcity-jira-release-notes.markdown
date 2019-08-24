@@ -5,12 +5,17 @@ date:   2018-09-05 23:00:00 +0300
 categories: jira teamcity octopus tfs
 ---
 
+*Update 2019-08-24*  
+*The official TeamCity plugin now supports metadata generation, 
+give it a try [https://octopus.com/blog/metadata-and-work-items](https://octopus.com/blog/metadata-and-work-items)*
+
 Recently we switched from TFS to Jira and TeamCity. 
 We used to generate release notes with 
 [the Octopus extension](https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks), 
 and it has release notes generation feature out of the box. 
-Sadly, the TeamCity plugin does not have the feature, and 
-the Octopus team said that they [are not going to implement it](https://octopusdeploy.uservoice.com/forums/170787-general/suggestions/3052975-include-teamcity-changes-links-with-each-release).
+~~Sadly, the TeamCity plugin does not have the feature, and 
+the Octopus team said that they [are not going to implement it](https://octopusdeploy.uservoice.com/forums/170787-general/suggestions/3052975-include-teamcity-changes-links-with-each-release).~~
+Starting from Octopus 2019.4 the official TeamCity plugin supports the metadata generation.  
 
 However, the Octopus support sent the link to the 
 [excellent article](https://blogg.bekk.no/generating-a-project-change-log-with-teamcity-and-powershell-45323f956437) 

@@ -14,7 +14,7 @@ There are many posts on the internet how to set up the custom error pages in ASP
 Some articles use client redirect, which is not suitable for SEO.
 In this short note, we set up custom errors without code duplication, and all cases will be covered. 
 
-First, we need to create `aspx` pages for 404 and 500 errors, let's keep them simple.
+First, we need to create `aspx` pages for 404 and 500 errors; let's keep them simple.
 
 {% gist 3b44d8a3b5f0c89b42136ada80d1817f 404.aspx %}
 
@@ -39,3 +39,5 @@ That's it!
 
 Here is a demo project [https://github.com/olsh/mvc5-custom-error-pages-example](https://github.com/olsh/mvc5-custom-error-pages-example)  
 The configuration was tested on .NET Framework 4.6.2 and IIS 8.5/10.
+
+If you found a mistake or the configuration doesn't work for you, please let me know.
