@@ -12,10 +12,10 @@ and it has release notes generation feature out of the box.
 Sadly, the TeamCity plugin does not have the feature, and 
 the Octopus team said that they [are not going to implement it](https://octopusdeploy.uservoice.com/forums/170787-general/suggestions/3052975-include-teamcity-changes-links-with-each-release).
 
-But the Octopus support sent the link to the 
+However, the Octopus support sent the link to the 
 [excellent article](https://blogg.bekk.no/generating-a-project-change-log-with-teamcity-and-powershell-45323f956437) 
 which shows how you can generate the release notes with commits using PowerShell.
-But the script doesn't fit our needs, because we wanted to include linked tasks too, so I extended the script.
+However, the script doesn't fit our needs, because we wanted to include linked tasks too, so I extended the script.
 
 The extended script grabs all the changes from a TeamCity build and tries to retrieve the tasks' 
 information from Jira and generates a markdown file with release notes. 
