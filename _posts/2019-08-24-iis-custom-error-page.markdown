@@ -14,7 +14,9 @@ There are many posts on the internet how to set up the custom error pages in ASP
 Some articles use client redirect, which is not suitable for SEO.
 In this short note, we set up custom errors without code duplication, and all cases will be covered. 
 
-First, we need to create `aspx` pages for 404 and 500 errors; let's keep them simple.
+First, we need to create `aspx` pages for 404 and 500 errors; let's keep them simple. 
+We use `aspx` because we need to override `customErrors` status code, for some reason it sets it to 200 (OK), 
+also both `customErrors` and `httpErrors` don't work with `cshtml`.
 
 {% gist 3b44d8a3b5f0c89b42136ada80d1817f 404.aspx %}
 
